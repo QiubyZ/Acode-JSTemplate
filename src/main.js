@@ -1,4 +1,5 @@
 import plugin from '../plugin.json';
+let AppSettings = acode.require("settings");
 
 class AcodePlugin {
 
@@ -7,7 +8,11 @@ class AcodePlugin {
   }
 
   async destroy() {
-
+    if (AppSettings.value[plugin.id]) {
+      delete AppSettings.value[plugin.id];
+      AppSettings.update();
+      window.toast(`Destroy Configurate of ${plugin.id}`, 5000);
+    }
   }
 }
 
