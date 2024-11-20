@@ -11,8 +11,8 @@ class AcodePlugin {
     if (AppSettings.value[plugin.id]) {
       delete AppSettings.value[plugin.id];
       AppSettings.update();
-      window.toast(`Destroy Configurate of ${plugin.id}`, 5000);
     }
+    window.toast(`Destroy Configurate of ${plugin.id}`, 5000);
   }
 }
 
