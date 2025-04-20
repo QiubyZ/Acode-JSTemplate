@@ -5,6 +5,15 @@
   "version": "1.0.0",
   "readme": "readme.md",
   "icon": "icon.png",
+  "keywords": [],
+  "license":"",
+  "contributors": [
+		{
+			"name": "QiubyZ",
+			"github": "QiubyZ",
+			"role": "main"
+		}
+	],
   "files": [],
   "minVersionCode" : 290,
   "price": 0,
